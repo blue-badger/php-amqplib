@@ -44,7 +44,7 @@ function process_message($msg)
 {
     $output = array();
 
-    exec('casperjs --verbose --cookies-file=/var/loadtest/scripts/casperjs/davidstea-testing/localstorage/davidstea --ignore-ssl-errors=true --pre=/var/loadtest/scripts/casperjs/davidstea-testing/config.js test --url="http://preprod.davidstea.com/ca_en/" --secure_url="https://preprod.davidstea.com/ca_en/" /var/loadtest/scripts/casperjs/davidstea-testing/tests/frontend/category-page.js', $output);
+    exec('casperjs --verbose --cookies-file=/var/loadtest/crawlerlocalstorage/davidstea' . md5(microtime() . rand()) . ' --ignore-ssl-errors=true --pre=/var/loadtest/crawler/config.js test --url="http://preprod.davidstea.com/ca_en/" --secure_url="https://preprod.davidstea.com/ca_en/" /var/loadtest/crawler/tests/frontend/category-page.js', $output);
 
     print_r($output);
 

@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-define('HOST', 'localhost');
+define('HOST', '45.55.197.70');
 define('PORT', 5672);
 define('USER', 'jonathan');
 define('PASS', 'rfv456TGB^%$');
