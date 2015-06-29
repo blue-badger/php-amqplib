@@ -39,7 +39,7 @@ $ch->queue_bind($queue, $exchange);
 
 $msg_body = implode(' ', array_slice($argv, 1));
 
-for($i=0;$i<50;$i++)
+for($i=0;$i<200;$i++)
 {
     for($j=0;$j<10;$j++)
     {
